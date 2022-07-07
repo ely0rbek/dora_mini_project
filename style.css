@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-color: #CCFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1234;
+}
+
+nav>img {
+    width: 15%;
+    margin-left: 5%;
+    height: auto;
+}
+
+nav>div {
+    width: 20%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+}
+
+nav>ul {
+    width: 20%;
+    margin-left: 30%;
+    /* border:1px solid black; */
+    height: 80px;
+    display: flex;
+}
+
+nav>ul>li {
+    margin-right: 35px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+nav>div>button {
+    margin-top: 35px;
+    margin-right: 20px;
+    padding: 3px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav>div>button:hover {
+    background-color: white;
+    box-shadow: 2px 1px 5px grey;
+    transform: scale(1.1, 1.1);
+    border: 1px solid transparent;
+}
+#ul_nav1{
+    position: fixed;
+    top: 110px;
+    z-index: 1;
+    /* width: 100%; */
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    display: none;
+    border:none;
+    box-shadow:3px 3px  5px 1px grey;
+}
+#ul_nav1 li{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-collapse: collapse;
+    color: #6182FE;
+    transition: 0.7s;
+    z-index: 123457999;
+}
+#ul_nav1 li:hover{
+    border: none;
+    border-collapse: collapse;
+    color: white;
+    transform: scale(1.3,1.3);
+}
+.nav_icon{
+    display: none;
+}
+.s10 {
+    color: #B79DCC;
+    position: relative;
+}
+
+.s10:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    margin: auto;
+    border-bottom: 3px dashed rgb(107, 107, 236);
+    bottom: -5px;
+    transition: .5s ease-in-out;
+}
+
+.s10:hover:after {
+    width: 100%;
+}
+
+.blur_div{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1233;
+    background-color:rgba(0, 0, 0, 0.1);
+    border:1px solid blue;
+}
+
+.navbar_text{
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 30%;
+    height: 300px;
+    margin-left: 70%;
+    background-color: blue;
+    z-index: 123;
+}
+
+
+
+
+
+/*   */
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url('./new_rasm/bag1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header>div {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 35%;
+    height: 300px;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: end;
+}
+
+header>p {
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    width: 25%;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    line-height: 35px;
+}
+
+header>span {
+    position: absolute;
+    top: 420px;
+    right: 470px;
+    width: 10%;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 45px 10px;
+    background-color: black;
+    color: white;
+}
+
+#numbers {
+    width: 100%;
+    /* height: 300px; */
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_child {
+    margin-left: 5%;
+    width: 15%;
+    /* border:1px solid black; */
+}
+
+.first_child>span {
+    font-size: 120px;
+}
+
+.last_child {
+    width: 50%;
+    margin-left: 30%;
+    /* border:1px solid blue; */
+}
+
+.last_child>div {
+    width: 44%;
+    margin-left: 3%;
+    float: left;
+    /* border:1px solid green; */
+}
+
+.last_child>div>span {
+    font-size: 80px;
+}
+.numbers_btn {
+    padding: 10px 15px;
+    margin-top: 35px;
+    transition: 0.5s;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+/*efvw55555555555555555555*/
+.royxat{
+    display: flex;
+}
+.royxat>div {
+    width: 30%;
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+.royxat>ul {
+    width: 30%;
+    margin-left: 40%;
+    font-size: 25px;
+    /* border:1px solid red; */
+    line-height: 50px;
+}
+
+.royxat>ul span {
+    color: grey;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.card_group>h2 {
+    padding-left: 80px;
+    font-size: 20px;
+    color: grey;
+}
+
+.card_position {
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+}
+
+.card_position>div {
+    width: 22.5%;
+    margin-left: 2%;
+    margin-top: 30px;
+    float: left;
+    height: 350px;
+    border: none;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.card_position>div>img {
+    width: 100%;
+    height: 70%;
+    transition: all 0.5s;
+
+}
+
+.card_position>div>h3,
+p {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.card {
+    transition: all 0.5s;
+}
+
+.card:hover.card>img {
+    transform: scale(1.1, 1.5);
+}
+
+.circle_btn {
+    clear: both;
+    padding: 45px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px !important;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.icons>div {
+    width: 90%;
+    margin-left: 5%
+}
+
+.icons {
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid red; */
+}
+
+.icons>h3 {
+    font-size: 18px;
+    color: grey;
+    padding-left: 100px;
+}
+
+.icons>div>img {
+    width: 20%;
+    margin-left: 4%;
+    margin-top: 60px;
+    float: left;
+    /* border: 1px solid red; */
+    height: 70px;
+}
+
+
+.footer_one {
+    width: 90%;
+    margin-left: 5%;
+    height: 600px;
+    background-image: url('./new_rasm/bag2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.absolute_div {
+    width: 45%;
+    margin-left: 10%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.absolute_div>div>button {
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.5s;
+    margin-top: 100px;
+
+}
+
+.absolute_div>div>button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1, 1.1);
+
+}
+
+.absolute_div>div>h1 {
+    color: white;
+    font-size: 50px;
+    line-height: 70px;
+    padding-top: 30px;
+}
+
+.absolute_div>div>p {
+    color: rgb(213, 209, 209);
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.absolute_div>svg {
+    color: rgb(203, 199, 199);
+    width: 120px;
+    height: 120px;
+    margin-top: 180px;
+}
+
+.footer_two {
+    width: 100%;
+    height: 600px;
+    background-image: url('./new_rasm/bag3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -123;
+    display: flex;
+}
+
+/* .footer_two {
+    display: flex;
+} */
+
+.contact {
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 150px;
+    /* border: 1px solid red; */
+
+}
+
+.contact>h1 {
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+.text_div {
+    margin-left: 20%;
+    width: 40%;
+    margin-top: 150px;
+    /* border: 1px solid red; */
+}
+
+.text_div>h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+
+}
+
+.text_div>button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.text_div>button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transform: scale(1.1, 1.1);
+}
+
+.thend {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thend>p {
+    color: white;
+    padding-left: 80px;
+    padding-top: 30px;
+
+}
+
+.thend>p>a {
+    color: blue;
+}
+
+.thend>a>svg {
+    width: 50px;
+    height: 50px;
+    color: grey;
+    margin: 10px;
+    margin-right: 90px;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/**/
+@media(max-width:1270px) {
+    nav>ul {
+        width: 20%;
+        margin-left: 20%;
+    }
+
+    nav>div {
+        width: 30%;
+        margin-left: 10%;
+    }
+
+    header>div {
+        width: 30%;
+        font-size: 80px;
+    }
+
+    header>p {
+        width: 30%;
+    }
+
+    header>span {
+        width: 12%;
+        top: 440px;
+    }
+    .royxat>ul {
+        width: 35%;
+        margin-left: 30%;
+    }
+    .card_position>div {
+        width: 30.5%;
+    }
+    .card_position{
+        height: 1150px;
+    }
+    .icons{
+        height: 800px;
+    }
+    .icons>div>img{
+        margin-left: 6.25%;
+        width: 25%;
+    }
+    .absolute_div{
+        width: 55%;
+    }
+}
+@media(max-width:1164px){
+    header>div{
+        left: 100px;
+        font-size: 60px;
+    }
+    header>p{
+        width: 40%;
+        left: 50%;
+    }
+    header>span{
+        width: 15%;
+        padding: 45px 10px;
+        height: 160px;
+        top: 430px;
+        font-size: 20px;
+    }
+    .absolute_div{
+        width: 60%;
+    }
+}
+@media(max-width:934px){
+    nav>img{
+        height: 60px;
+        margin-top: 20px;
+    }
+    nav>img{
+        width: 12%;
+    }
+    nav>ul{
+        width: 30%;
+        margin-left: 10%;
+    }
+    nav>div{
+        width: 40%;
+        margin-left: 5%;
+    }
+    header>div{
+        width: 40%;
+        left: 60px;
+        top:230px;
+        line-height: 80px;
+    }
+    header>p{
+        font-size: 17px;
+        left: 55%;
+    }
+    header>span{
+        width: 15%;
+        padding: 35px 10px;
+        height: 140px;
+        top: 430px;
+        right: 300px;
+        font-size: 20px;
+    }
+    .royxat>ul{
+        width: 45%;
+        margin-left: 20%;
+    }
+}
+@media(max-width:810px){
+    nav>div{
+        display: none;
+    }
+    nav>ul{
+        display: none ;
+    }
+   
+    .nav_icon{
+        display: block;
+        width: 20%;
+        margin-left: 40%;
+        margin-top: 20px;
+    }
+    .nav_icon:hover{
+        cursor: pointer;
+    }
+    .nav_icon svg{
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+        border: 2px solid black;
+    }
+    nav>img{
+        width: 20%;
+        margin-left: 10%;
+        height: 70px;
+    }
+    .card_position>div{
+        width: 47%;
+    }
+    .card_position{
+        height: 1550px;
+    }
+    .absolute_div{
+        width: 70%;
+        margin-left: 5%;
+    }
+    .absolute_div>svg{
+        margin-top: 220px;
+        width: 150px;
+        height: 150px;
+    }
+    header>p{
+        font-size: 15px;
+        left: 60%;
+        top: 140px;
+    }
+    header>span{
+        width: 17%;
+        top: 450px;
+    }
+}
+@media(max-width:666px){
+    header>div{
+        width: 70%;
+        left: 10px;
+        font-size: 80px;
+        top: 150px;
+    }
+    header>p{
+        width: 70%;
+        margin-left: 5%;
+        top: 360px;
+        left: 80px;
+    }
+    header>span{
+        width: 22%;
+        right: 200px;
+    }
+    .absolute_div>div>h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .absolute_div>svg{
+        width: 100px;
+        height: 100px;
+        margin-top: 200px;
+    }
+    .text_div>h1{
+        font-size: 45px;
+    }
+    .royxat>div{
+        width: 20%;
+        margin-left: 5%;
+    }
+    .royxat>ul{
+        width: 40%;
+        margin-left: 25%;
+        font-size: 18px;
+    }
+    .last_child{
+        width: 60%;
+        margin-left: 20%;
+
+    }
+    .first_child>span{
+        font-size: 90px;
+    }
+    .last_child>div>span{
+        font-size: 60px;
+        /* border: 1px solid red; */
+
+    }
+    .icons>div>img {
+        width: 43%;
+        
+    }
+    .icons{
+        height: 1080px;
+        /* border: 1px solid red; */
+
+
+    }
+    .icons>div{
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact{
+        margin-left: 5%; 
+
+    }
+    .text_div{
+        margin-top: 180px;
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@media(max-width:516px){
+    nav>img{
+        width: 35%;
+        height: 80px;
+        /* border:1px solid red; */
+    }
+    header>div{
+        width: 70%;
+        /* border:1px solid red; */
+        font-size: 60px;
+    }
+    header>p{
+        left: 70px;
+        width: 80%;
+        top: 320px;
+        /* border:1px solid red; */
+    }
+    header>span{
+        width: 27%;
+        right: 200px;
+    }
+    #numbers{
+        display: block;
+    }
+    .first_child{
+        width: 45%;
+        margin-left: 25%;
+        text-align: center;
+    }
+    .first_child>span{
+        font-size: 100px;
+    }
+    .last_child{
+        width: 83%;
+        margin-left: 8%;
+    }
+    .last_child>div{
+        margin-left: 6%;
+
+    }
+    .royxat{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .royxat>ul{
+        width: 75%;
+        margin-left: 20%;
+    }
+    .card_position>div{
+        width: 75% !important;
+        margin-left: 10%;
+
+    }
+    .card_position{
+        height: 3050px;
+
+    }
+    .footer_two{
+        display: block;
+    }
+    .contact{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+
+    }
+    .bottom_tag{
+        padding-top: 140px !important;
+    }
+    .text_div{
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 8%;
+
+    }
+    .footer_two{
+        height: 800px;
+    }
+
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora_task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="d-flex" id="nav_id">
+        <img src="./File/img/Logo.png" alt="">
+        <ul>
+            <li>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-filter-left" viewBox="0 0 16 16">
+                        <path
+                            d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                    </svg></a>
+            </li>
+            <li class="s10">
+                <a href="#card_group">проекты</a>
+            </li>
+            <li class="s10">
+                <a href="#icons">агентство</a>
+            </li>
+        </ul>
+        <div>
+            <button>ru</button>
+            <button><i class="fa fa-phone"></i> +998 (93) 512 53 24</button>
+        </div>
+        <div class="nav_icon" onclick="drop()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg></div>
+
+    </nav>
+    <ul id="ul_nav1">
+        <li><a href="#card_group">проекты</a></li>
+        <li><a href="#icons">агентство</a></li>
+        <li><a href="#">ru</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i> +998 (93) 512 53 24</a></li>
+    </ul>
+    <script>
+        var a = 1;
+        function drop() {
+            if (a % 2 == 1) {
+                document.getElementById('ul_nav1').style.display = 'block';
+            }
+            else {
+                document.getElementById('ul_nav1').style.display = 'none';
+            }
+            a++;
+        }
+    </script>
+    <header>
+        <div data-aos="fade-right">Технологии <br> & дизайн</div>
+        <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione in dicta odit inventore
+            amet saepe ipsa
+            nostrum temporibus laudantium totam.</p>
+        <span>Обсудитъ <br> проект</span>
+    </header>
+    <div id="numbers">
+        <div class="first_child" data-aos="fade-up">
+            <span>47+</span>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="last_child" data-aos="fade-down">
+            <div>
+                <span>5</span>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <div>
+                <span>27</span>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <div>
+                <span>4+</span>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div>
+                <span>89%</span>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="d-block mx-auto numbers_btn">Об агенстве</button> -->
+    <button class="glow-on-hover d-block mx-auto my-3" type="button">Об агенстве</button>
+    <div class="royxat  my-5">
+        <div>
+            Направления
+        </div>
+        <ul data-aos="flip-left">
+            <li> <span>01 </span> Разработка сайтов</li>
+            <li> <span>02 </span> Мобильные приложения</li>
+            <li> <span>03 </span> Разработка ботов</li>
+            <li> <span>04 </span> UX/UI дизайн</li>
+            <li> <span>05 </span> SEO / контент-маркетинг</li>
+            <li> <span>06 </span> Брендинг</li>
+            <li> <span>07 </span> Поддержка и развитие</li>
+        </ul>
+    </div>
+    <!-- <button class="d-block mx-auto numbers_btn">Заказатъ услугу</button> -->
+    <button class="glow-on-hover d-block mx-auto my-3" type="button">Заказатъ услугу</button>
+
+    <div class="card_group" id="card_group">
+        <h2>Последние работи</h2>
+        <div class="card_position ">
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/FVsirKDXvN.webp" alt="">
+                <h3>Dream City</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/kZ6E1SyCVq.webp" alt="">
+                <h3>Stroy Mart</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/Yq9Wcwm387.webp" alt="">
+                <h3>Bizning Uylar</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/rtj9oqrbbm.webp" alt="">
+                <h3>Zarafshon City</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/9Cc8B5NUFM.webp" alt="">
+                <h3>Diamond Castle</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/UJPdmbcn8O.webp" alt="">
+                <h3>Seoul MUN</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/KIiZIgifZP.webp" alt="">
+                <h3>Alfraganus</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <img src="./File/img_project/fcXMU69W8w.webp" alt="">
+                <h3>Hovlingiz</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <button class="circle_btn">Все работы</button>
+    <div class="icons my-5" id="icons">
+        <h3>
+            Нам доверяют
+        </h3>
+        <div>
+            <img src="./File/img_clients/3OUolRfzVt.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/4lkrig6Ri4.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/5Nlicnorbi.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/8pnOw9z3Wl.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/9OWdxLB09D.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/9xeSzdEND0.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/AYbNrVTKWv.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/cw6dKpMuNu.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/dcxkFO84vq.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/E3GXJFnNuB.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/ebh0CwPNqo.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/eItZq2Pxuf.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/ezLVcIViqt.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/griHmqvRSz.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/TpkJbxSBnr.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+            <img src="./File/img_clients/W3Dtm30NhC.svg" class="vanilla_card" data-aos="zoom-out" alt="">
+        </div>
+    </div>
+    <!-- <button class="d-block mx-auto numbers_btn my-4" style="clear: both;">Все кленти</button> -->
+    <button class="glow-on-hover d-block mx-auto my-5" style="clear: both;" type="button">Все кленти</button>
+
+    <div class="footer_one">
+        <div class="absolute_div" data-aos="zoom-in-down">
+            <div>
+                <button>Готовые решения</button>
+                <h1>Разработка сайтов в сфере недвижимости</h1>
+                <p>Реализовали более 17 проектов для жилых <br> комплексов и застройщиков</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+            </svg>
+        </div>
+    </div>
+    <div class="footer_two">
+        <div class="contact" data-aos="fade-up" >
+            <h1 class="bottom_tag">Адрес</h1>
+            <p>Mirzo Ulugbek Avayxon 98/4</p>
+            <h1>Контакты</h1>
+            <p>info@dora.uz</p>
+            <div class="icon d-flex my-5">
+                <a href="https://facebook.com" id="face" class="fa fa-facebook mx-3"></a>
+                <a href="https://facebook.com" id="face" class="fa fa-instagram mx-3"></a>
+                <a href="https://facebook.com" id="face" class="fa fa-telegram mx-3"></a>
+                <a href="https://facebook.com" id="face" class="fa fa-linkedin mx-3"></a>
+            </div>
+        </div>
+        <div class="text_div" data-aos="zoom-out-down">
+            <h1>Расскажите о <br> вашем проекте</h1>
+            <button>Рассказат</button>
+        </div>
+    </div>
+    <div class="thend">
+        <p>Designed by <a href="https://t.me/elyorbek_0309">Elyorbek</a></p>
+        <a href="#nav_id" style="color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--  -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".vanilla_card"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+
+</html>
